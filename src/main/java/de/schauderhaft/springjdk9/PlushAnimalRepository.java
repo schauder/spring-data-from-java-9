@@ -15,33 +15,11 @@
  */
 package de.schauderhaft.springjdk9;
 
-import org.springframework.data.annotation.Id;
+import org.springframework.data.repository.CrudRepository;
 
 /**
  * @author Jens Schauder
  */
-public class PlushAnimal {
+interface PlushAnimalRepository extends CrudRepository<PlushAnimal, Long> {
 
-	@Id
-	Long id;
-
-	String name;
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-
-		PlushAnimal that = (PlushAnimal) o;
-
-		if (id != null ? !id.equals(that.id) : that.id != null) return false;
-		return name != null ? name.equals(that.name) : that.name == null;
-	}
-
-	@Override
-	public int hashCode() {
-		int result = id != null ? id.hashCode() : 0;
-		result = 31 * result + (name != null ? name.hashCode() : 0);
-		return result;
-	}
 }
