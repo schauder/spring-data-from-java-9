@@ -45,7 +45,7 @@ public class RepositoryTest {
 		animal.name = "Brumm Ted";
 		repository.save(animal);
 
-		Optional<PlushAnimal> reloaded = repository.findOne(23L);
+		Optional<PlushAnimal> reloaded = repository.findById(23L);
 
 		assertThat(reloaded).contains(animal);
 	}
