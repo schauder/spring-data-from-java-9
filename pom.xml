@@ -20,6 +20,10 @@
 		<java.version>9</java.version>
 	</properties>
 
+	<modules>
+		<module>lombok</module>
+	</modules>
+
 	<build>
 		<plugins>
 			<plugin>

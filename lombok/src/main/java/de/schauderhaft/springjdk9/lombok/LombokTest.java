@@ -1,3 +1,5 @@
+package de.schauderhaft.springjdk9.lombok;
+
 import lombok.Data;
 
 @Data
