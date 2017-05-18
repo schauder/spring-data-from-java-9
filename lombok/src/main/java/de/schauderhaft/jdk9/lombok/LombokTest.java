@@ -1,4 +1,4 @@
-package de.schauderhaft.springjdk9.lombok;
+package de.schauderhaft.jdk9.lombok;
 
 import lombok.Data;
 
