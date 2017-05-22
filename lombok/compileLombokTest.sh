@@ -1,1 +1,1 @@
-~/.jenv/candidates/java/9/bin/javac -J--permit-illegal-access -cp /Users/jschauder/.m2/repository/org/projectlombok/lombok/1.16.16/lombok-1.16.16.jar src/main/java/de/schauderhaft/jdk9/lombok/LombokTest.java
+~/.jenv/candidates/java/9/bin/javac -J--permit-illegal-access -cp ../lib/lombok-edge.jar src/main/java/de/schauderhaft/jdk9/lombok/LombokTest.java src/main/java/de/schauderhaft/jdk9/lombok/Host.java
